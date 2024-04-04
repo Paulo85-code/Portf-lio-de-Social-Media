@@ -1,0 +1,397 @@
+body {
+    background-color: #5a6930;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+@font-face {
+    font-family: 'Calligraphy';
+    src: local('calligraphy_7'), url('../Images/FONTES/calligraphy_7/Calligraphy.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Catchye';
+    src: local('Catchye'), url('../Images/FONTES/catchye/Catchye.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'gontserrat';
+    src: local('gontserrat'), url('../Images/FONTES/gontserrat/Gontserrat-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gyahegi';
+    src: local('gyahegi'), url('../Images/FONTES/GYAHEGI/Gyahegi.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'modern_sans';
+    src: local('modern_sans'), url('../Images/FONTES/modern_sans/ModernSans-Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'mogent';
+    src: local('mogent'), url('../Images/FONTES/mogent/Mogent.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'consolas';
+    src: local('consolas'), url('../Images/FONTES/Consolas-Font/CONSOLA.TTF') format('truetype');
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+/* HOME */
+
+#containerHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#descriptionNameRigth {
+    color: #fefae0;
+    position: absolute;
+    margin-right: 2rem;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Catchye';
+}
+
+#line {
+    height: 0.1rem;
+    width: 3rem;
+    background-color: #fefae0;
+    margin-right: 1rem;
+
+}
+
+#containerHome h1 {
+    color: #fefae0;
+    font-size: 60px;
+    font-family: 'gyahegi';
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+#year {
+    color: #8e8e8e;
+    font-size: 105vh;
+    text-align: left;
+    position: absolute;
+    opacity: 0.1;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'mogent';
+    top: 10rem;
+    z-index: 1;
+    animation: animation_year 5s infinite ease alternate;
+}
+
+@keyframes animation_year {
+    0%{transform: translateX(10px)
+        translateY(20px);
+
+    }
+    50%{transform: translateX(20px)
+        translateY(30px);
+
+    }
+    100%{transform: translateX(10px)
+        translateY(20px)
+        ;
+
+    }
+}
+
+/* SOBRE */
+
+#containerAbout {
+    background: linear-gradient( #fffdee, #fffdee,#5a6930 );
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+#lineAbout {
+    background-color: #5a6930;
+    height: 0.1rem;
+    width: 50vw;
+    margin-right: 0px;
+    position: absolute;
+    right: 0;}
+
+
+#containerAbout h2 {
+    color: #5a6930;
+    font-family: 'gyahegi';
+    font-size: 2.9rem;
+    margin-left: 5rem;
+    margin-top: 0;
+    z-index: 1;
+}
+
+#titleAbout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 7rem;
+    position: absolute;
+    top: 0;
+}
+
+#wordAbout {
+    width: 85%;
+    position: absolute;
+    left: 0;
+    margin-left: 5rem;
+    z-index: 1;
+}
+
+#h3 {
+    color: #5a6930;
+    font-family: 'consolas';
+    font-size: 19px;
+    margin-top: 50px;
+    width: 80%;
+    position: relative;
+}
+
+
+#wordAbout h4 {
+    color: #fffdee;
+    font-family: 'gyahegi';
+    font-size: 0.9rem;
+    position: absolute;
+    margin-top: 80px;
+}
+
+#wordAbout h5 {
+    color: #fffdee;
+    font-family: 'Calligraphy';
+    font-size: 2.8rem;
+    right: 0;
+    position: absolute;
+    margin-top: 120px;
+}
+
+#interrogation {
+    color: #5a6930;
+    font-family: 'mogent';
+    font-size: 4rem;
+    margin-left: 1rem;
+    margin-top: 0;
+}
+
+#aboutBackground {
+    color: #fffdee;
+    font-size: 650px;
+    position: absolute;
+    opacity: 0.04;
+    user-select: none;
+    font-family: 'mogent';
+    z-index: 1;
+    margin-top: 35%;
+}
+
+/* Information */
+
+#informationContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#information {
+    width: 89%;
+    height: 95vh;
+    display: grid;
+    margin-top: -7%;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-top: 4em;
+    z-index: 1;
+    place-items: center;
+}
+
+#information h2{
+    font-family: 'gyahegi';
+    color: #fffdee;
+    font-size: 25.6px;
+    text-transform: uppercase;
+}
+
+#training {
+    margin-top: -18%;
+}
+
+#information h3, h4{
+    font-family: 'consolas';
+    color: #fffdee;
+}
+
+#information h3 {
+    font-size: 20.8px;
+    text-transform: uppercase;
+}
+
+#information h4 {
+    margin-top: -10px;
+    font-size: 17px;
+}
+
+ul {
+    color: #fffdee;
+    font-family: 'consolas';
+    font-size: 19.2px;
+    list-style: none;
+}
+
+#information h4::before {
+    content: "-";
+    margin-right: 8px;
+}
+
+li::before {
+    content: "-";
+    margin-right: 8px;
+}
+/* Summary */
+
+#summary {
+    width: 100vw;
+    height: 88vh;
+    background-color: #fcfcdc;
+    position: relative;
+    overflow: hidden;
+    margin-top: 64px;
+}
+
+
+#summaryBackground {
+    color: #ece4c4;
+    font-size: 460px;
+    opacity: 0.7;
+    user-select: none;
+    font-family: 'mogent';
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#summaryText{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    right: 0;
+    margin-right: 8%;
+    margin-top: -5%;
+}
+
+.summaryNumber{
+    color: #5a6930;
+    font-family: 'mogent';
+}
+
+#summaryText h3 {
+    color: #5a6930;
+    font-family: 'gyahegi';
+}
+
+#summaryText h4 {
+    color: #5a6930;
+    font-family: 'consolas';
+    margin-left: 7%;
+    margin-top: 0;
+}
+
+/* Branding */
+
+#branding {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+
+#branding h3 {
+    font-family: 'consolas';
+    color: #fcfcdc;
+    font-size: 16px;
+    margin-top: 15rem;
+    margin-left: 40px;
+}
+
+#brandingBackground span {
+    font-family: 'Catchye';
+    font-size: 90px;
+}
+
+#brandingBackground {
+    color: #fcfcdc;
+    font-size: 230px;
+    user-select: none;
+    font-family: 'gyahegi';
+    line-height: 150px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+#isaCerimonialista {
+    width: 90vw;
+    height: 200vh;
+    background-color: #ece4c4;
+    position: relative;
+    overflow: hidden;
+    margin-top: -70px;
+    left: 50%;
+    transform: translate(-50%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#isaBack {
+    background-image: url('../Images/DIVISÕES/BRANDING/ISA/backgroundIsa.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#contentIsa h3{
+    color: #5a6930;
+    font-family: 'Calligraphy';
+    font-size: 60px;
+    text-align: center;
+}
