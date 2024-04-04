@@ -351,6 +351,7 @@ li::before {
 #brandingBackground span {
     font-family: 'Catchye';
     font-size: 90px;
+    opacity: 30%;
 }
 
 #brandingBackground {
@@ -364,6 +365,7 @@ li::before {
     place-content: center;
     margin: 0px;
     margin-top: 50px;
+    opacity: 30%;
 }
 
 #isaCerimonialista {
@@ -392,6 +394,10 @@ li::before {
 #contentIsa h3{
     color: #5a6930;
     font-family: 'Calligraphy';
-    font-size: 60px;
+    font-size: 69px;
     text-align: center;
+}
+
+#contentIsa h4{
+    font-family: 'consolas';
 }
