@@ -302,7 +302,7 @@ li::before {
 }
 
 #summaryText{
-    width: 50%;
+    width: 52%;
     height: auto;
     position: absolute;
     z-index: 1;
@@ -310,25 +310,28 @@ li::before {
     grid-template-rows: auto;
     grid-template-columns: repeat(3, 1fr);
     right: 0;
-    margin-right: 8%;
+    margin-right: 3%;
     margin-top: -5%;
 }
 
 .summaryNumber{
     color: #5a6930;
     font-family: 'mogent';
+    font-size: 20px;
 }
 
 #summaryText h3 {
     color: #5a6930;
     font-family: 'gyahegi';
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
 #summaryText h4 {
     color: #5a6930;
     font-family: 'consolas';
     margin-left: 7%;
-    margin-top: 0;
+    font-size: 15px;
 }
 
 /* Branding */
@@ -394,10 +397,15 @@ li::before {
 #contentIsa h3{
     color: #5a6930;
     font-family: 'Calligraphy';
-    font-size: 69px;
+    font-size: 75px;
     text-align: center;
 }
 
 #contentIsa h4{
     font-family: 'consolas';
+    color: #5a6930;
+    text-align: justify;
+    margin-right: 105px;
+    margin-left: 105px;
+    font-size: 24px;
 }
